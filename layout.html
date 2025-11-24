@@ -1,0 +1,131 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    body{
+
+        padding: 0;
+        margin: 0;
+
+    }
+    html,*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #main{
+        width: 900px;
+        height: 400px;
+        background-color: #999;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+    .box{
+        width: 200px;
+        height: 300px;
+        background-color: #F04;
+    }
+</style>
+<body>
+    <div id="main">
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quaerat doloremque eius eos! Fugit autem, temporibus iusto consequatur Veritatis nemo possimus officia quae doloremque?</div>
+        <div class="box">2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora et enim nostrum sed esse unde at, similique maiores quo corporis?. Officia esse voluptatem dolorum consequuntur.</div>
+        <div class="box">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit modi officia quae voluptas explicabo provident obcaecati voluptatibus alias blanditiis suscipit?</div>
+        <div class="box" style="height: 360px;">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+       <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+
+    
+</body>
+</html>  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    body{
+
+        padding: 0;
+        margin: 0;
+
+    }
+    html,*{
+        margin: 0;
+        padding: 0;
+    }
+    #main{
+        width: 900px;
+        height: 600px;
+        background-color: #219c48;
+        margin: 0 auto;
+        display: flex;
+        flex-direction:  row-reverse;
+        gap: 10px;
+
+    }
+    #right {
+        flex-grow: 1;
+        /* width: 200px;
+        height: 300px; */
+        background-color: #F04;
+    }
+    #left {
+        flex-grow: 2;
+        /* width: 400px;
+        height: 600px; */
+        background-color: #040ff0;
+        display: flex;
+        flex-direction: column;
+    }
+    header, main, footer {
+        
+        flex-grow: 1;
+        border: 2px solid #000;
+        margin: 5px;
+        background-color: #f0f034;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+       height: 200px;
+       width: 100px;
+    }
+    main {
+        height: 400px;
+        width: 100px;
+    }
+    footer {
+        height: 100px;
+        width: 100px;
+    }
+</style>
+<body>
+  <div id="main">
+      <div id="right">
+        <h2>right box</h2>
+      </div>
+      <div left="box">
+      <header><h2>header</h2></header>
+      <main><h2>main content</h2></main>
+        <footer><h2>footer</h2></footer>
+      </div>
+     
+    </div>  
+    
+</body>
+</html>
