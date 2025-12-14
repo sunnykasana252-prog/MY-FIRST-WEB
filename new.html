@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .block-menu a
+    {
+    display:block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+}
+.inline-menu a{
+    display: inline;
+    background-color: #24f544;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration :none;
+}
+.inline-block a{
+    display: inline-block;
+    background-color:#9b59b6;
+    color: white;
+    height:50px;
+    width:120px;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+}
+.float-menu a{
+    float: right;
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+}
+.Clear-Example{
+    clear:both;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 20px;
+    border:1px solid #ccc;
+
+}</style>
+</head>
+<body>
+    <h2>Block-Example</h2>
+    <div class="block-menu">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+      <h2>inline-menu</h2>
+      <div class="inline-menu">
+         <a href="#">Home</a>
+         <a href="#">Product</a>
+         <a href="#">About</a>
+         <a href="#">Contact</a>
+     </div>
+           <h2>inline-block</h2>
+      <div class="inline-block">
+         <a href="#">Home</a>
+         <a href="#">Product</a>
+         <a href="#">About</a>
+         <a href="#">Contact</a>
+     </div>
+     <h2>float-menu</h2>
+       <div class="float-menu">
+          <a href="#">Home</a>
+          <a href="#">Product</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+       </div>
+     <h2>Clear-Example</h2>
+     <div class="Clear-Example">
+        <p>This text come <b> clearing float</b>. 
+        It will appear below the orange menu above</p>
+     </div>
+    </body>
+</html>

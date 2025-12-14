@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f2f2f2;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* GRID */
+    .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    /* PRODUCT CARD */
+    .card {
+        background: white;
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card: hover {
+        transform: translate(-5px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .card h3 {
+        margin: 10px 0 5px;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #007bff;
+        margin: 5px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px 14px;
+        background: #007bff;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background: #0056b3;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Products</h1>
+
+<div class="grid">
+
+   
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="product">
+        <h3>Smart Watch</h3>
+        <p class="price">$49.99</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="product">
+        <h3>Wireless Headphones</h3>
+        <p class="price">$29.99</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="product">
+        <h3>Bluetooth Speaker</h3>
+        <p class="price">$19.99</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="product">
+        <h3>Sports Shoes</h3>
+        <p class="price">$59.99</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+</div>
+
+</body>
+</html>
